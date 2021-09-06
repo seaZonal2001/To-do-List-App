@@ -66,22 +66,33 @@ h1{
     display: flex;
     justify-content: center;
     overflow: auto;
-    position: relative;;
+    position: relative;
+    
 }
 
 .item{
     position: relative;
-    width: 70vw;
+    width: 60vw;
     min-height: 45px;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
-    overflow-y: scroll;
+    overflow-y: auto;
 
 }
    
 
-.item::-webkit-scrollbar {
-    display: none;
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: black;
+    border-radius: 5px;
+   
 }
+::-webkit-scrollbar-thumb{
+    
+   width: 10px;
+   background-color: rgb(58, 48, 48);
+   border-radius: 5px;
+}
+
 
 .item i.complete{
     position: absolute;
